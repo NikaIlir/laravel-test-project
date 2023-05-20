@@ -54,6 +54,8 @@ php artisan db:seed
 
 - User Registration: `POST /api/register`
 - User Login: `POST /api/login`
+
+Authenticated endpoints:
 - List of Packages: `GET /api/packages`
 - Register to a Package: `POST /api/registration/{package:uuid}`
 
