@@ -25,7 +25,6 @@ class LoginCustomerRequest extends FormRequest
         return [
             'email' => 'required|email',
             'password' => 'required',
-            'device_name' => 'required|string',
         ];
     }
 }

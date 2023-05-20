@@ -26,7 +26,8 @@ class CustomerController extends BaseController
 
         return $this->success(
             ['token' => $user->createToken($request->name)->plainTextToken],
-            'User register successfully.'
+            'User register successfully.',
+            201
         );
     }
 
@@ -47,7 +48,7 @@ class CustomerController extends BaseController
         }
 
         return $this->success(
-            ['token' => $user->createToken($request->device_name)->plainTextToken],
+            ['token' => $user->createToken($request->email)->plainTextToken],
             'Logged in successfully.'
         );
     }

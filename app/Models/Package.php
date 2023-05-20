@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Package extends Model
 {
-    use HasUuids;
+    use HasFactory, HasUuids;
+
+    public $timestamps = false;
 
     /**
      * Get the columns that should receive a unique identifier.
